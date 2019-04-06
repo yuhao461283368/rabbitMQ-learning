@@ -1,0 +1,18 @@
+spring:
+  rabbitmq:
+    #主机
+    host: localhost
+    #端口号
+    port: 5672
+    #用户名
+    username: guest
+    #密码
+    password: guest
+    #虚拟主机(一个RabbitMQ服务可以配置多个虚拟主机，每一个虚拟机主机之间是相互隔离，相互独立的，授权用户到指定的virtual-host就可以发送消息到指定队列)
+    virtual-host: /
+    #消息发送确认回调
+    publisher-confirms: true
+
+server:
+  port: 8089
+
